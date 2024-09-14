@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets_css_styles.css">
+    <title>PFMS - Budget</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Finance Management System</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="goals.html">Goals</a>
+            <a href="reports.html">Reports</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Budget</h2>
+        <form id="budgetForm">
+            <label for="month">Month:</label>
+            <input type="month" id="month" name="month" required>
+            <label for="amount">Budget Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <button type="submit">Set Budget</button>
+        </form>
+        <div id="budgetOverview"></div>
+    </main>
+    <script src="assets_js_app.js"></script>
+</body>
+</html>

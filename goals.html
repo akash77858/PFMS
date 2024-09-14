@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets_css_styles.css">
+    <title>PFMS - Goals</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Finance Management System</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="budget.html">Budget</a>
+            <a href="reports.html">Reports</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Goals</h2>
+        <form id="goalForm">
+            <label for="goal">Goal:</label>
+            <input type="text" id="goal" name="goal" required>
+            <label for="amount">Target Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="date">Target Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Set Goal</button>
+        </form>
+        <div id="goalList"></div>
+    </main>
+    <script src="assets_js_app.js"></script>
+</body>
+</html>
